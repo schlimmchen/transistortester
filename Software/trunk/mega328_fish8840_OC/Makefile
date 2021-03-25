@@ -139,7 +139,7 @@ CFLAGS += -DLCD_ST7565_H_OFFSET=0
 #CFLAGS += -DLCD_ST7565_V_FLIP=1
 # The contrast value can be predefined with the constant VOLUME_VALUE
 # for ST7565 controller the value can be between 0 and 63, for the SSD1306 0 to 255 can be selected.
-#CFLAGS += -DVOLUME_VALUE=25
+CFLAGS += -DVOLUME_VALUE=30
 
 # You can specify a Y start line (vertical address) for the display output with the option LCD_ST7565_Y_START.
 # If your output start in the middle of the display, you can specify a Y_START of 32
