@@ -294,7 +294,7 @@ CFLAGS += -DUSE_EEPROM
 
 # With graphical displays the layout of pins is usually shown in long style " Pin  1=E 2=B 3=C"
 # With the NO_LONG_PINLAYOUT option the short style "Pin 123=EBC" is used
-#CFLAGS += -DNO_LONG_PINLAYOUT
+CFLAGS += -DNO_LONG_PINLAYOUT
 
 # The PULLUP_DISABLE option disable the pull-up Resistors of IO-Ports.
 # To use this option a external pull-up Resistor (10k to 30k)
@@ -303,7 +303,7 @@ CFLAGS += -DPULLUP_DISABLE
 
 # The ANZ_MESS option specifies, how often an ADC value is read and accumulated.
 # Possible values of ANZ_MESS are 5 to 200 .
-CFLAGS += -DANZ_MESS=25
+CFLAGS += -DANZ_MESS=100
 
 
 # The POWER_OFF option enables the power off function, otherwise loop measurements infinitely
