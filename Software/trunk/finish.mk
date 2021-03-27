@@ -174,7 +174,7 @@ erase:
 # make upload  additionally calls make to compile the software for selected target
 upload:
 	$(MAKE)
-	avrdude -c $(PROGRAMMER) -B $(BitClock) $(AVRDUDE_BAUD) -p $(PARTNO) -P $(PORT) -U flash:w:./$(PROJECT).hex:a \
+	avrdude -c $(PROGRAMMER) -B $(BitClock) $(AVRDUDE_BAUD) -p $(PARTNO) -P $(PORT) -V -U flash:w:./$(PROJECT).hex:a \
 	-U eeprom:w:./$(PROJECT).eep:a
 program:
 	$(MAKE)
