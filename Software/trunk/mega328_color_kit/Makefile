@@ -94,7 +94,7 @@ CFLAGS += -DFOUR_LINE_LCD
 # The PAGE_MODE activates a moving line cursor for menu function selection together with FOUR_LINE_LCD
 # and WITH_ROTARY_SWITCH.
 # Without the PAGE_MODE option, the line cursor is fixed to line 3 and the text moves.
-#CFLAGS += -DPAGE_MODE
+CFLAGS += -DPAGE_MODE
 
 
 # The LCD_ST7565 option must be set to support a 128x64 LCD graphics display
@@ -157,10 +157,10 @@ CFLAGS += -DLCD_ST7565_V_FLIP=1
 CFLAGS += -DLCD_CHANGE_COLOR=2
 
 # You can select the background color (format 5 bit red, 6 bit green, 5 bit blue)
-CFLAGS += -DLCD_BG_COLOR=0x7800
+CFLAGS += -DLCD_BG_COLOR=0x0000
 
 # You can select the foreground color (format 5 bit red, 6 bit green, 5 bit blue)
-CFLAGS += -DLCD_FG_COLOR=0xffff
+CFLAGS += -DLCD_FG_COLOR=0x07e0
 
 # You can also select a icon color  (format 5 bit red, 6 bit green, 5 bit blue)
 # If LCD_ICON_COLOR is not specified, the LCD_FG_COLOR is used
@@ -172,11 +172,11 @@ CFLAGS += -DLCD_ICON_COLOR=0x03ff
 #CFLAGS += -DFONT_6X8
 #CFLAGS += -DFONT_8X8
 #CFLAGS += -DFONT_7X12
-CFLAGS += -DFONT_8X12thin
+#CFLAGS += -DFONT_8X12thin
 #CFLAGS += -DFONT_8X14
 #CFLAGS += -DFONT_8X15
 #CFLAGS += -DFONT_8X16
-#CFLAGS += -DFONT_8X16thin
+CFLAGS += -DFONT_8X16thin
 
 # There are also different 24x32 pixel icons for presentation of the transistor symbols available.
 # you can select a special type with setting the ICON_TYPE.
@@ -316,7 +316,7 @@ CFLAGS += -DUSE_EEPROM
 
 # With graphical displays the layout of pins is usually shown in long style " Pin  1=E 2=B 3=C"
 # With the NO_LONG_PINLAYOUT option the short style "Pin 123=EBC" is used
-#CFLAGS += -DNO_LONG_PINLAYOUT
+CFLAGS += -DNO_LONG_PINLAYOUT
 
 # The PULLUP_DISABLE option disable the pull-up Resistors of IO-Ports.
 # To use this option a external pull-up Resistor (10k to 30k)
